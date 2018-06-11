@@ -1,0 +1,34 @@
+Rui:
+- Caesar-cipher
+- Binary-search
+- Factors-of-an-integer
+
+Saraiva:
+- Sorting-algorithms-Quicksort
+- Guess-the-number
+- Least-common-multiple
+
+João Paulo:
+- Towers-of-Hanoi
+- Binary-digits
+- Arithmetic-geometric-mean
+
+Marco:
+- Remove-duplicate-elements
+- Factorial
+- Sieve-of-Eratosthenes
+
+Francisco:
+- Ackermann-function
+- ABC-Problem
+- Greatest-element-of-a-list
+
+Rua:
+- N-queens-problem
+- 100-doors
+- Greatest-common-divisor
+
+Jácome:
+- Sorting-algorithms-Merge-sort
+- Fibonacci-sequence
+- Hailstone-sequence

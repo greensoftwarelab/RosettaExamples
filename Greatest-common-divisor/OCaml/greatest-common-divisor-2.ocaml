@@ -1,0 +1,4 @@
+let rec gcd1 a b =
+  match (a mod b) with
+    0 -> b
+  | r -> gcd1 b r
