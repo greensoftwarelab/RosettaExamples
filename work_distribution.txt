@@ -1,34 +1,34 @@
 Rui:
-- Caesar-cipher
+- Caesar-cipher (priority)
 - Binary-search
 - Factors-of-an-integer
 
 Saraiva:
-- Sorting-algorithms-Quicksort
+- Sorting-algorithms-Quicksort (priority)
 - Guess-the-number
 - Least-common-multiple
 
 João Paulo:
-- Towers-of-Hanoi
+- Towers-of-Hanoi (priority)
 - Binary-digits
 - Arithmetic-geometric-mean
 
 Marco:
-- Remove-duplicate-elements
+- Remove-duplicate-elements (priority)
 - Factorial
 - Sieve-of-Eratosthenes
 
 Francisco:
-- Ackermann-function
+- Ackermann-function (priority)
 - ABC-Problem
 - Greatest-element-of-a-list
 
 Rua:
-- N-queens-problem
+- N-queens-problem (priority)
 - 100-doors
 - Greatest-common-divisor
 
 Jácome:
-- Sorting-algorithms-Merge-sort
+- Sorting-algorithms-Merge-sort (priority)
 - Fibonacci-sequence
 - Hailstone-sequence
