@@ -1,7 +1,7 @@
 with Ada.Containers.Ordered_Sets;
 with Ada.Text_IO; use Ada.Text_IO;
 
-procedure Unique_Set is
+procedure Remove_Duplicate_Elements is
    package Int_Sets is new Ada.Containers.Ordered_Sets(Integer);
    use Int_Sets;
    Nums : array (Natural range <>) of Integer := (1,2,3,4,5,5,6,7,1);
@@ -18,4 +18,4 @@ begin
       exit when Set_Cur = Unique.Last;
       Set_Cur := Next(Set_Cur);
    end loop;
-end Unique_Set;
+end Remove_Duplicate_Elements;

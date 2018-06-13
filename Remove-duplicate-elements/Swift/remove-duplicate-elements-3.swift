@@ -1,7 +1,9 @@
+
+
 func uniq<T: Equatable>(lst: [T]) -> [T] {
   var seen = [T]()
   return lst.filter { x in
-    let unseen = find(seen, x) == nil
+    let unseen = seen.index(of:x) == nil
     if (unseen) {
       seen.append(x)
     }
@@ -9,4 +11,5 @@ func uniq<T: Equatable>(lst: [T]) -> [T] {
   }
 }
 
-println(uniq([3,2,1,2,3,4]))
+print(uniq(lst:[3,2,1,2,3,4]))
+
