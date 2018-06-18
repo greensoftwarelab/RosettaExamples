@@ -1,4 +1,4 @@
--module(ackermann).
+-module(ackermann_function).
 -export([ackermann/2]).
 -export([main/0]).
 

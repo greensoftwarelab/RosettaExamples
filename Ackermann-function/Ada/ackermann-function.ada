@@ -1,6 +1,6 @@
 with Ada.Text_IO;  use Ada.Text_IO;
 
-procedure Test_Ackermann is
+procedure Ackermann_Function is
    function Ackermann (M, N : Natural) return Natural is
    begin
       if M = 0 then
@@ -18,4 +18,4 @@ begin
          New_Line;
       end loop;
    end loop;
-end Test_Ackermann;
+end Ackermann_Function;
