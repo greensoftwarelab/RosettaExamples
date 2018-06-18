@@ -1,3 +1,11 @@
+proc main(){
+    for m in 0..3{
+        for n in 0..12{
+            writeln(A(m,n));
+        }
+    }
+}
+
 proc A(m:int, n:int):int {
         if m == 0 then
                 return n + 1;

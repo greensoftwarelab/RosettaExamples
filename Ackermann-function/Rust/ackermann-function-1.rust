@@ -9,6 +9,9 @@ fn ack(m: isize, n: isize) -> isize {
 }
 
 fn main() {
-    let a = ack(3, 4);
-    println!("{}", a); // 125
+    for m in 0..4 {
+        for n in 0..13 {
+            println!("{}", ack(m,n));
+        }
+    }
 }

@@ -13,9 +13,9 @@ procedure Test_Ackermann is
    end Ackermann;
 begin
    for M in 0..3 loop
-      for N in 0..6 loop
+      for N in 0..12 loop
          Put (Natural'Image (Ackermann (M, N)));
+         New_Line;
       end loop;
-      New_Line;
    end loop;
 end Test_Ackermann;

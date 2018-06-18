@@ -14,7 +14,7 @@ var
    m, n	: Integer;
 
 begin
-   for n := 0 to 6 do
-      for m := 0 to 3 do
-	 WriteLn('A(', m, ',', n, ') = ', ackermann(m,n));
+   for m := 0 to 3 do
+      for n := 0 to 12 do
+	 WriteLn(ackermann(m,n));
 end.
