@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=ackermann-function.pascal
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=ackermann_function
 endif
 
 compile:
@@ -30,4 +30,3 @@ valmem:
 
 clean:
 	rm -rf *_run *.o
-

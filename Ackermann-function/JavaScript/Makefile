@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=ackermann-function.js
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=ackermann_function
 endif
 
 compile:
@@ -23,6 +23,7 @@ valgrind:
 	valgrind --tool=massif --stacks=yes /usr/local/src/node-v7.9.0-linux-x64/bin/node $(TASK).js
 valmem:
 		valgrind --tool=massif --stacks=yes  /usr/local/src/node-v7.9.0-linux-x64/bin/node $(TASK).js
+
 
 clean:
 	rm -rf $(TASK).js

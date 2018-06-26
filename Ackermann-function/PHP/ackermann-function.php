@@ -1,3 +1,4 @@
+<?php
 function ackermann( $m , $n )
 {
     if ( $m==0 )
@@ -11,5 +12,9 @@ function ackermann( $m , $n )
     return ackermann( $m-1, ackermann( $m , $n-1 ) );
 }
 
-echo ackermann( 3, 4 );
-// prints 125
+for($m = 0; $m < 4; $m++){
+    for($n = 0; $n < 13; $n++){
+        echo ackermann($m, $n),"\n";
+    }
+}
+?>

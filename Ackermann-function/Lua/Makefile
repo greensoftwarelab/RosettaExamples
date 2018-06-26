@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=ackermann-function.lua
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=ackermann_function
 endif
 
 compile:
@@ -23,6 +23,5 @@ valgrind:
 	valgrind --tool=massif --stacks=yes /usr/local/src/lua-5.3.3/bin/lua  $(FILE)
 valmem:
 		valgrind --tool=massif --stacks=yes  /usr/local/src/lua-5.3.3/bin/lua  $(FILE)
-
 clean:
 	rm -rf $(TASK).lua

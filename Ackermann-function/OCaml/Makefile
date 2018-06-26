@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=ackermann-function-2.ocaml
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=ackermann_function
 endif
 
 compile:
@@ -30,3 +30,4 @@ valmem:
 
 clean:
 	rm -rf *.ocaml_run *.cmi *.cmx *.o
+

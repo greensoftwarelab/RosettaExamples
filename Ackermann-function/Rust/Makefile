@@ -1,18 +1,18 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=ackermann-function-1.rust
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=ackermann_function
 endif
 
 compile:
 	/usr/local/src/rust-1.16.0/bin/rustc -C opt-level=3 -C target-cpu=core2 -C lto -L /usr/local/src/rust-libs $(FILE) -o $(TASK).rust_run
 
 measure:
-	sudo ../../RAPL/main "./$(TASK).rust_run" Rust $(TASK)
+	sudo ../../RAPL/main "./$(TASK)_run" Rust $(TASK)
 
 run:
 	./$(TASK).rust_run
@@ -24,6 +24,7 @@ valgrind:
 	valgrind --tool=massif --stacks=yes ./$(TASK).rust_run 
 valmem:
 	valgrind --tool=massif --stacks=yes  ./$(TASK).rust_run
-clean:
+
+clean: 
 	rm -rf *.rust_run
 

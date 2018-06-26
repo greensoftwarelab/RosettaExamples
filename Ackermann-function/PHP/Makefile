@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=ackermann-function.php
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=ackermann_function
 endif
 
 compile:
@@ -23,5 +23,6 @@ valgrind:
 	valgrind --tool=massif --stacks=yes php -n -d memory_limit=4096M $(FILE)
 valmem:
 		valgrind --tool=massif --stacks=yes  php -n -d memory_limit=4096M $(FILE)
+
 clean:
 	rm -rf $(TASK).php
