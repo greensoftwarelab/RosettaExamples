@@ -1,0 +1,74 @@
+V "GNAT Lib v6"
+M P W=b
+A -O3
+A -fomit-frame-pointer
+A -march=native
+A -mfpmath=sse
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_IO
+RV NO_RECURSION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U countqueens%b		countqueens.adb		f6f20d3e NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_lli%s	s-imglli.adb		s-imglli.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D countqueens.adb	20180611140629 ce9ff8ea countqueens%b 1:n-queens-problem-2.ada
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20140801093848 98747b85 interfaces.c_streams%b
+D system.ads		20151123113124 6326c08a system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-imgint.ads		20090409150019 02dbe0c2 system.img_int%s
+D s-imglli.ads		20090409150019 114f55d1 system.img_lli%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140801093848 ed88f8fb system.storage_elements%b
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+D s-wchcon.adb		20140225151139 974e87c5 system.wch_con%b
+X 1 ada.ads
+16K9*Ada 19e8 8|1r6 2r5
+X 6 a-textio.ads
+49K13*Text_IO 471e16 8|1w10 2r9
+242U14*Put 8|45s9 46s9
+263U14*Put_Line 8|47s9
+X 8 n-queens-problem-2.ada
+4U11*CountQueens 4b11 49l5 49t16
+5V14 Queens{long_integer} 5b14 5>22 42l9 42t15 47s39
+5i22 N{integer} 6r25 7r29 8r29 14r16 17r31 19r30 37r23
+6a9 A(integer) 18r30 19r38 23r30 24m25 24r34 25m25 29r30 30m25 30r34 31m25
+. 38m13
+7a9 U(boolean) 20r24 21m25 27m25
+8a9 V(boolean) 20r39 22m25 28m25
+9i9 M{long_integer} 15m17 15r22 41r16
+11U19 Sub 11b19 11>24 26s25 35l13 35t16 40s9
+11i24 I{integer} 14r20 17r26 18r26 19r26 23r33 24r28 26r30 29r33 30r28
+12i13 K{integer} 23m25 25r34 29m25 31r34
+12i16 P{integer} 18m21 20r27 21r28 27r28
+12i19 Q{integer} 19m21 20r42 22r28 28r28
+17i21 J{integer} 18r33 19r41 24r37 25r28 30r37 31r28
+37i13 I{integer} 38r16 38r22
+44i9 N{integer} 45r29 47r47
+

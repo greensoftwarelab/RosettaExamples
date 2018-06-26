@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=abc-problem.erl
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=abc_problem
 endif
 
 compile:
@@ -27,4 +27,4 @@ valmem:
 		valgrind --tool=massif --stacks=yes   erl -smp enable -noshell -run  $(TASK) main
 
 clean:
-	rm -rf *.dump *.beam
+	rm -rf *.dump *.beam $(TASK).erl

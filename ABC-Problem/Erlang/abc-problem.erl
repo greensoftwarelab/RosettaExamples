@@ -1,5 +1,5 @@
--module(abc).
--export([can_make_word/1, can_make_word/2, blocks/0]).
+-module(abc_problem).
+-export([can_make_word/1, can_make_word/2, blocks/0, main/0]).
 
 blocks() -> ["BO", "XK", "DQ", "CP", "NA", "GT", "RE", "TG", "QD", "FS",
              "JW", "HU", "VI", "AN", "OB", "ER", "FS", "LY", "PC", "ZM"].
@@ -12,5 +12,7 @@ can_make_word([L|Tail], [B|Rest], Tried) ->
   (lists:member(L,B) andalso can_make_word(Tail, lists:append(Rest, Tried),[]))
   orelse can_make_word([L|Tail], Rest, [B|Tried]).
 
-main(_) -> lists:map(fun(W) -> io:fwrite("~s: ~s~n", [W, can_make_word(W)]) end,
-                     ["A","Bark","Book","Treat","Common","Squad","Confuse"]).
+main() -> lists:map(fun(W) -> io:fwrite("~s: ~s~n", [W, can_make_word(W)]) end,
+                     ["A","Bark","Book","Treat","Common","Squad","Confuse"]),
+halt(0).
+

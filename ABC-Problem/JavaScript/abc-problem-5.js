@@ -89,9 +89,9 @@
         "BO XK DQ CP NA GT RE TG QD FS JW HU VI AN OB ER FS LY PC ZM"
     );
 
-    return unlines(map(
+    console.log(unlines(map(
         x => show([x, compose(
             [not, isNull, curry(spellWith)(blocks), stringChars, toUpper]
         )(x)]), ["", "A", "BARK", "BoOK", "TrEAT", "COmMoN", "SQUAD", "conFUsE"]
-    ));
+    )));
 })();

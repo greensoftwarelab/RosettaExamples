@@ -80,4 +80,5 @@ is_not_allowed_queen_placement( N, Board ) ->
 task( N ) ->
     io:fwrite( "N = ~p. One solution.~n", [N] ),
     Board = solve( N ),
-    display( Board ).
+    display( Board ),
+    halt(0).
