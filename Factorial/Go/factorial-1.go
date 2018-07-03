@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-    fmt.Println(factorial(800))
+    fmt.Println(factorial(15))
 }
 
 func factorial(n int64) *big.Int {

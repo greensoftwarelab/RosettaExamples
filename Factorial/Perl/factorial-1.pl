@@ -9,9 +9,6 @@ sub factorial
   $result;
 }
 
-# using a .. range
-sub factorial {
-    my $r = 1;
-    $r *= $_ for 1..shift;
-    $r;
-}
+
+my @f = factorial(15);
+print "@f\n";

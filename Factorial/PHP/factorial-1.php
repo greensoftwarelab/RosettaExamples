@@ -11,4 +11,7 @@ function factorial($n) {
 
   return $factorial;
 }
+
+$value = factorial(15);
+echo "$value\n";
 ?>

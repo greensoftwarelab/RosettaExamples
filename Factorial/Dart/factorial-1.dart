@@ -6,6 +6,5 @@ int fact(int n) {
 }
 
 main() {
-  print(fact(10));
-  print(fact(-1));
+  print(fact(15));
 }

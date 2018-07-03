@@ -4,3 +4,7 @@ let factorial n =
     result := !result * i
   done;
   !result
+
+let() = 
+  let n = 15 in
+  Printf.printf "%d\n" (factorial n)
