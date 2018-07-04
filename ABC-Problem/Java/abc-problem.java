@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class ABC {
+class ABC {
 
     public static void main(String[] args) {
         List<String> blocks = Arrays.asList(
