@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=sieve-of-eratosthenes-2.chapel
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=sieve_of_eratosthenes
 endif
 
 compile:
@@ -24,3 +24,6 @@ valgrind:
 	valgrind --tool=massif --stacks=yes ./$(FILE)_run
 valmem:
 		valgrind --tool=massif --stacks=yes  ./$(FILE)_run
+clean:
+	rm -rf *.chapel_run $(TASK).chpl
+

@@ -1,0 +1,123 @@
+V "GNAT Lib v6"
+M P W=b
+A -O3
+A -fomit-frame-pointer
+A -march=native
+A -mfpmath=sse
+A -gnatN
+A -gnatp
+A -march=haswell
+A -mmmx
+A -mno-3dnow
+A -msse
+A -msse2
+A -msse3
+A -mssse3
+A -mno-sse4a
+A -mcx16
+A -msahf
+A -mmovbe
+A -maes
+A -mno-sha
+A -mpclmul
+A -mpopcnt
+A -mabm
+A -mno-lwp
+A -mfma
+A -mno-fma4
+A -mno-xop
+A -mbmi
+A -mbmi2
+A -mno-tbm
+A -mavx
+A -mavx2
+A -msse4.2
+A -msse4.1
+A -mlzcnt
+A -mno-rtm
+A -mno-hle
+A -mrdrnd
+A -mf16c
+A -mfsgsbase
+A -mno-rdseed
+A -mno-prfchw
+A -mno-adx
+A -mfxsr
+A -mxsave
+A -mxsaveopt
+A -mno-avx512f
+A -mno-avx512er
+A -mno-avx512cd
+A -mno-avx512pf
+A -mno-prefetchwt1
+A -mno-clflushopt
+A -mno-xsavec
+A -mno-xsaves
+A -mno-avx512dq
+A -mno-avx512bw
+A -mno-avx512vl
+A -mno-avx512ifma
+A -mno-avx512vbmi
+A -mno-clwb
+A -mno-pcommit
+A -mno-mwaitx
+A -mno-clzero
+A -mno-pku
+A -mtune=haswell
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLICIT_LOOPS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sieve_of_eratosthenes%b  sieve_of_eratosthenes.adb  4c73a7c6 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-comlin.ads		20140225151544 ea62afbc ada.command_line%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20140801093848 98747b85 interfaces.c_streams%b
+D sieve_of_eratosthenes.adb  20180703140233 9e7cfdae sieve_of_eratosthenes%b 1:sieve-of-eratosthenes.ada
+D system.ads		20151123113124 6326c08a system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-imgint.ads		20090409150019 02dbe0c2 system.img_int%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140801093848 ed88f8fb system.storage_elements%b
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+D s-wchcon.adb		20140225151139 974e87c5 system.wch_con%b
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 1r19 24r10
+X 2 a-comlin.ads
+38K13*Command_Line 139e21 12|1w23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 24r14
+242U14*Put 12|24s22
+X 12 sieve-of-eratosthenes.ada
+3U11*Sieve_of_Eratosthenes 3b11 27l5 27t26
+5i4 Last{positive} 6r22 11r31 15r29
+6a4 Prime(boolean) 12r10 16m13 22r18 23r10
+7i4 Base{positive} 11r17 11r24 12r16 13r17 13r24 17r26 20m7 20r15
+8i4 Cnt{positive} 13m10 15r23 16r19 17m13 17r20
+22i8 Number{integer} 23r16 24r41
+

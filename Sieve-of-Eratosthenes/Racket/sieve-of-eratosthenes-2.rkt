@@ -8,4 +8,4 @@
   (for/list ([n (in-range 2 (add1 n))]
              #:when (vector-ref primes n))
     n))
-(sieve 100)
+(sieve 100000)

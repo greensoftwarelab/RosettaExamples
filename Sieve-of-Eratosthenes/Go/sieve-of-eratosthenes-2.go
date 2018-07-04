@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -35,14 +34,8 @@ func primesOdds(top uint) func() uint {
 }
 
 func main() {
-	iter := primesOdds(100)
-	for v := iter(); v <= 100; v = iter() {
+	iter := primesOdds(100000)
+	for v := iter(); v <= 100000; v = iter() {
 		print(v, " ")
 	}
-	iter = primesOdds(1000000)
-	count := 0
-	for v := iter(); v <= 1000000; v = iter() {
-		count++
-	}
-	fmt.Printf("\r\n%v\r\n", count)
 }

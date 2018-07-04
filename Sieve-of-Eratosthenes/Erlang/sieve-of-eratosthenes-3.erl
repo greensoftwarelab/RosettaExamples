@@ -1,5 +1,5 @@
--module(ossieve).
--export([main/1]).
+-module(sieve_of_eratosthenes).
+-export([main/0]).
 
 sieve(Candidates,SearchList,Primes,_Maximum) when length(SearchList) == 0 ->
     ordsets:union(Primes,Candidates);
@@ -15,10 +15,10 @@ remove_multiples_of(Number,Candidates,SearchList) ->
     RemoveList = ordsets:filter( fun(X) -> X rem Number == 0 end, NewSearchList),
     {ordsets:subtract(Candidates, RemoveList), ordsets:subtract(NewSearchList, RemoveList)}.
 
-main(N) ->
-    io:fwrite("Creating Candidates...~n"),
+main() ->
+    N = 100000,
     CandidateList = lists:seq(3,N,2),
     Candidates = ordsets:from_list(CandidateList),
-    io:fwrite("Sieving...~n"),
     ResultSet = ordsets:add_element(2,sieve(Candidates,Candidates,ordsets:new(),N)),
-    io:fwrite("Sieved... ~w~n",[ResultSet]).
+    io:fwrite("~w~n",[ResultSet]),
+    halt(0).

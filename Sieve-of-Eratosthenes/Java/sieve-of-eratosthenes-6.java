@@ -3,7 +3,9 @@ import java.util.ArrayList;
 
 // generates all prime numbers up to about 10 ^ 19 if one can wait 100's of years or so...
 // practical range is about 10^14 in a week or so...
-public class SoEPagedOdds implements Iterator<Long> {
+class Test {
+
+private static class SoEPagedOdds implements Iterator<Long> {
   private final int BFSZ = 1 << 16;
   private final int BFBTS = BFSZ * 32;
   private final int BFRNG = BFBTS * 2;
@@ -64,15 +66,18 @@ public class SoEPagedOdds implements Iterator<Long> {
         return this.next(); // and recursively loop
     }
   }
-
+}
   public static void main(String[] args) {
-    long n = 1000000000;
-    long strt = System.currentTimeMillis();
+    long n = 100000;
     Iterator<Long> gen = new SoEPagedOdds();
-    int count = 0;
-    while (gen.next() <= n) count++;
-    long elpsd = System.currentTimeMillis() - strt;
-    System.out.println("Found " + count + " primes up to " + n + " in " + elpsd + " milliseconds.");
+    long prime = gen.next();
+    while (prime <= n){
+        System.out.print(prime + " ");
+        prime = gen.next();
+    }
+    System.out.println(" ");
   }
 
 }
+
+

@@ -10,8 +10,7 @@ String iterableToString(Iterable seq) {
 }
 
 main() {
-  int limit = 1000;
-  int strt = new DateTime.now().millisecondsSinceEpoch;
+  int limit = 100000;
   Set<int> sieve = new Set<int>();
 
   for(int i = 2; i <= limit; i++) {
@@ -25,9 +24,5 @@ main() {
    }
   }
   var sortedValues = new List<int>.from(sieve);
-  int elpsd = new DateTime.now().millisecondsSinceEpoch - strt;
-  print("Found " + sieve.length.toString() + " primes up to " + limit.toString() +
-      " in " + elpsd.toString() + " milliseconds.");
   print(iterableToString(sortedValues)); // expect sieve.length to be 168 up to 1000...
-//  Expect.equals(168, sieve.length);
 }

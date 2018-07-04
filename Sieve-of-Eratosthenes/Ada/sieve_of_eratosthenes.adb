@@ -1,3 +1,4 @@
+pragma Source_Reference (000001, "sieve-of-eratosthenes.ada");
 with Ada.Text_IO, Ada.Command_Line;
 
 procedure Sieve_of_Eratosthenes is

@@ -1,3 +1,7 @@
+
+open System
+open Unchecked
+
 let primes limit =
   let buf = System.Collections.BitArray(int limit + 1, true)
   let cull p = { p * p .. p .. limit } |> Seq.iter (fun c -> buf.[int c] <- false)
@@ -6,6 +10,5 @@ let primes limit =
 
 [<EntryPoint>]
 let main argv =
-  if argv = null || argv.Length = 0 then failwith "no command line argument for limit!!!"
-  printfn "%A" (primes (System.UInt32.Parse argv.[0]) |> Seq.length)
-  0 // return an integer exit code
+  printfn "%A" (primes (100000) |> Seq.length)
+  exit 0 // return an integer exit code

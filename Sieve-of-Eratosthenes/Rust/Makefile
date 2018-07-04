@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=sieve-of-eratosthenes-1.rust
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=sieve_of_eratosthenes
 endif
 
 compile:
