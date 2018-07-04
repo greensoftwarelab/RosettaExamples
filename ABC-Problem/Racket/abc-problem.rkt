@@ -28,8 +28,7 @@
           (~s w #:min-width 9)
           (if (can-make-word? w) "yes" "no")))
 
-(module+ main
-  (for-each report-word WORD-LIST))
+ (for-each report-word WORD-LIST)
 
 (module+ test
   (require rackunit)
