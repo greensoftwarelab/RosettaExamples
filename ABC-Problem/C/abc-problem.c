@@ -30,12 +30,12 @@ int main(void)
 		0 };
 
 	char *words[] = {
-		"", "A", "BARK", "BOOK", "TREAT", "COMMON", "SQUAD", "Confuse", 0
+		"A", "BARK", "BoOK", "TrEAT", "COmMoN", "SQUAD", "conFUsE", 0
 	};
 
 	char **w;
 	for (w = words; *w; w++)
-		printf("%s\t%d\n", *w, can_make_words(blocks, *w));
+		printf("%s: %s\n", *w, (can_make_words(blocks, *w) ? "true" : "false"));
 
 	return 0;
 }

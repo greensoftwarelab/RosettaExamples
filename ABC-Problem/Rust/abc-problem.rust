@@ -22,8 +22,8 @@ fn can_make_word(word: &str, blocks: &[&str]) -> bool {
 fn main() {
     let blocks = [("BO"), ("XK"), ("DQ"), ("CP"), ("NA"), ("GT"), ("RE"), ("TG"), ("QD"), ("FS"),
                   ("JW"), ("HU"), ("VI"), ("AN"), ("OB"), ("ER"), ("FS"), ("LY"), ("PC"), ("ZM")];
-    let words = ["A", "BARK", "BOOK", "TREAT", "COMMON", "SQUAD", "CONFUSE"];
+    let words = ["A", "BARK", "BoOK", "TrEAT", "COmMoN", "SQUAD", "conFUsE"];
     for word in &words {
-        println!("{} -> {}", word, can_make_word(word, &blocks))
+        println!("{}: {}", word, can_make_word(word, &blocks))
     }
 }

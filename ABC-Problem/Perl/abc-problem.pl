@@ -25,12 +25,12 @@ sub _can_make_word {
 }
 
 my @blocks1 = qw(BO XK DQ CP NA GT RE TG QD FS JW HU VI AN OB ER FS LY PC ZM);
-my @words = qw(A BARK BOOK TREAT COMMON SQUAD CONFUSE);
+my @words = qw(A BARK BoOK TrEAT COmMoN SQUAD conFUsE);
 for my $word (@words) {
     if(can_make_word($word, @blocks1)) {
-        print $word, " => true", "\n";
+        print $word, ": true", "\n";
     }
     else {
-        print $word, " => false", "\n";
+        print $word, ": false", "\n";
     }
 }

@@ -33,7 +33,7 @@ func main() {
 	sp := newSpeller(
 		"BO XK DQ CP NA GT RE TG QD FS JW HU VI AN OB ER FS LY PC ZM")
 	for _, word := range []string{
-		"A", "BARK", "BOOK", "TREAT", "COMMON", "SQUAD", "CONFUSE"} {
-		fmt.Println(word, sp(word))
+		"A", "BARK", "BoOK", "TrEAT", "COmMoN", "SQUAD", "conFUsE"} {
+		fmt.Println(word + ":", sp(word))
 	}
 }

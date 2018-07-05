@@ -11,7 +11,7 @@ class ABC {
                 "JW", "HU", "VI", "AN", "OB",
                 "ER", "FS", "LY", "PC", "ZM");
 
-        for (String word : Arrays.asList("", "A", "BARK", "BOOK", "TREAT", "COMMON", "SQUAD", "CONFUSE")) {
+        for (String word : Arrays.asList("A", "BARK", "BoOK", "TrEAT", "COmMoN", "SQUAD", "conFUsE")) {
             System.out.printf("%s: %s%n", word.isEmpty() ? "\"\"" : word, canMakeWord(word, blocks));
         }
     }
