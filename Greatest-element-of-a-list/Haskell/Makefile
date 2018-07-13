@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=greatest-element-of-a-list-1.hs
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=greatest_element_of_a_list
 endif
 
 compile:

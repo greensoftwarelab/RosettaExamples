@@ -1,6 +1,6 @@
 with Ada.Text_Io;
 
-procedure Max_Test isco
+procedure Greatest_Element_Of_A_List is
    -- substitute any array type with a scalar element
    type Flt_Array is array (Natural range <>) of Float;
 
@@ -22,7 +22,7 @@ procedure Max_Test isco
       return Max_Element;
    end Max;
 
-   Buf : Flt_Array := (-275.0, -111.19, 0.0, -1234568.0, 3.14159, -3.14159);
+   Buf : Flt_Array := (1.0,2.0,3.0,1.0,4.0,2.0,1.0);
 begin
    Ada.Text_IO.Put_Line(Float'Image(Max(Buf)));
-end Max_Test;
+end Greatest_Element_Of_A_List;
