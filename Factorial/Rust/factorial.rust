@@ -10,10 +10,9 @@ fn factorial_iterative(n: u64) -> u64 {
 }
 
 fn main () {
-    for i in 1..10 {
-        println!("{}", factorial_recursive(i))
-    }
-    for i in 1..10 {
-        println!("{}", factorial_iterative(i))
-    }
+      println!("{}", factorial_recursive(15))
+
+//    for i in 1..10 {
+//        println!("{}", factorial_iterative(i))
+//    }
 }

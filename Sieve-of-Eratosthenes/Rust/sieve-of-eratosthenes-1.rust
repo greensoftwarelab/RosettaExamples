@@ -20,5 +20,5 @@ fn simple_sieve(limit: usize) -> Vec<usize> {
 }
 
 fn main() {
-    println!("{:?}", simple_sieve(100));
+    println!("{:?}", simple_sieve(100000));
 }

@@ -20,3 +20,8 @@ function eratosthenes(limit) {
     }
     return prms;
 }
+
+var primes = eratosthenes(100000);
+for (p = 0; p <= primes.length; p++) {
+    console.log(p);
+}

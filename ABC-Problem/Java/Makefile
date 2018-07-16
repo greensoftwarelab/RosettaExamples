@@ -1,30 +1,35 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=abc-problem.java
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=abc_problem
+endif
+
+ifndef JAVA_CLASS
+#$(error JAVA_CLASS is not set)
+	JAVA_CLASS=ABC
 endif
 
 compile:
 	cp $(FILE) $(TASK).java
 	/usr/local/src/jdk1.8.0_121/bin/javac -d . $(TASK).java
 measure:
-	sudo ../../RAPL/main "/usr/local/src/jdk1.8.0_121/bin/java $(TASK)" Java $(TASK)
+	sudo ../../RAPL/main "/usr/local/src/jdk1.8.0_121/bin/java $(JAVA_CLASS)" Java $(JAVA_CLASS)
 
 run:
-	/usr/local/src/jdk1.8.0_121/bin/java $(TASK)
+	/usr/local/src/jdk1.8.0_121/bin/java $(JAVA_CLASS)
 
 mem:
-	/usr/bin/time -v /usr/local/src/jdk1.8.0_121/bin/java $(TASK)
+	/usr/bin/time -v /usr/local/src/jdk1.8.0_121/bin/java $(JAVA_CLASS)
 
 valgrind:
-	valgrind --tool=massif --stacks=yes /usr/local/src/jdk1.8.0_121/bin/java $(TASK)
+	valgrind --tool=massif --stacks=yes /usr/local/src/jdk1.8.0_121/bin/java $(JAVA_CLASS)
 
 valmem:
-	valgrind --tool=massif --stacks=yes  /usr/local/src/jdk1.8.0_121/bin/java $(TASK)
+	valgrind --tool=massif --stacks=yes  /usr/local/src/jdk1.8.0_121/bin/java $(JAVA_CLASS)
 
 clean:
 	rm *.class $(TASK).java

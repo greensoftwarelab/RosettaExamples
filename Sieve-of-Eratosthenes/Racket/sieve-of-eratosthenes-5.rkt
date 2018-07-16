@@ -1,5 +1,0 @@
-(define (sieve l)
-  (define x (car l))
-  (cons x (sieve (diff (cdr l) (ints-from (+ x x) x)))))
-(define primes (sieve (ints-from 2 1)))
-(!! (take 25 primes))

@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=sieve-of-eratosthenes-2.ocaml
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=sieve_of_eratosthenes
 endif
 
 compile:
@@ -29,4 +29,4 @@ valmem:
 	valgrind --tool=massif --stacks=yes  ./$(FILE)_run
 
 clean:
-	rm -rf *.ocaml_run *.cmi *.cmx *.o
+	rm -rf *.ocaml_run *.cmi *.cmx *.o *.ml

@@ -8,3 +8,7 @@
               and when (<= i stop) do
                 (loop for j from (ash (* i (1+ i)) 1) to maxi by (1+ (ash i 1))
                    do (setf (sbit sieve j) 1)))))))
+
+(defun main ()
+
+  (format t "~D" (sieve-odds 100000)))

@@ -4,4 +4,4 @@ sub sieve{ my (@s, $i);
 	} 2..$_[0]
 }
 
-print join ", " => sieve 100;
+print join ", " => sieve 100000;

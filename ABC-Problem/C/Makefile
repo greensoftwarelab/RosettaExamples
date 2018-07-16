@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=abc-problem.c
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=abc_problem
 endif
 
 compile:

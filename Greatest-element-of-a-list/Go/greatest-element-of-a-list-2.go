@@ -2,12 +2,12 @@ package main
 
 import (
     "fmt"
-    "math/rand"
-    "time"
+    //"math/rand"
+    //"time"
 )
 
 // function, per task description
-func largest(a []int) (lg int, ok bool) {
+func largest(a []float64) (lg float64, ok bool) {
     if len(a) == 0 {
         return
     }
@@ -22,14 +22,15 @@ func largest(a []int) (lg int, ok bool) {
 
 func main() {
     // random size slice
-    rand.Seed(time.Now().UnixNano())
-    a := make([]int, rand.Intn(11))
-    for i := range a {
-        a[i] = rand.Intn(101) - 100 // fill with random numbers
-    }
+    //rand.Seed(time.Now().UnixNano())
+    //a := make([]int, rand.Intn(11))
+    //for i := range a {
+    //    a[i] = rand.Intn(101) - 100 // fill with random numbers
+    //}
 
+    a := [7]float64{1.0,2.0,3.0,1.0,4.0,2.0,1.0}
     fmt.Println(a)
-    lg, ok := largest(a)
+    lg, ok := largest(a[:])
     if ok {
         fmt.Println(lg)
     } else {

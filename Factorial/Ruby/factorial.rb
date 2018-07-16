@@ -27,13 +27,15 @@ end
 
 require 'benchmark'
 
-n = 400
+n = 15 #n = 400
 m = 10000
+print factorial_recursive(n)
+print "\n"
 
-Benchmark.bm(16) do |b|
-  b.report('recursive:')       {m.times {factorial_recursive(n)}}
-  b.report('tail recursive:')  {m.times {factorial_tail_recursive(n)}}
-  b.report('iterative:')       {m.times {factorial_iterative(n)}}
-  b.report('inject:')          {m.times {factorial_inject(n)}}
-  b.report('reduce:')          {m.times {factorial_reduce(n)}}
-end
+#Benchmark.bm(16) do |b|
+#  b.report('recursive:')       {m.times {factorial_recursive(n)}}
+#  b.report('tail recursive:')  {m.times {factorial_tail_recursive(n)}}
+#  b.report('iterative:')       {m.times {factorial_iterative(n)}}
+#  b.report('inject:')          {m.times {factorial_inject(n)}}
+#  b.report('reduce:')          {m.times {factorial_reduce(n)}}
+#end

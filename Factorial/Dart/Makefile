@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=factorial-1.dart
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=factorial
 endif
 
 compile:

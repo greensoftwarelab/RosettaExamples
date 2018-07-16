@@ -5,3 +5,5 @@ function fact(n, acc)
   end
   return fact(n-1, n*acc)
 end
+
+print(fact(15))

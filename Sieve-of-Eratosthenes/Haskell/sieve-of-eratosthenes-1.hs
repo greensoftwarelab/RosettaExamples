@@ -3,6 +3,10 @@ import Control.Monad.ST
 import Data.Array.ST
 import Data.Array.Unboxed
 
+main = do
+    let n = 100000
+    print(primesToUO n)
+
 sieveUO :: Int -> UArray Int Bool
 sieveUO top = runSTUArray $ do
     let m = (top-1) `div` 2

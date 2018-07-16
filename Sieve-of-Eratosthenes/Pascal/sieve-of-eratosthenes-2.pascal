@@ -4,7 +4,7 @@ program prim(output);
   {$APPTYPE CONSOLE}
 {$ENDIF}
 const
-  PrimeLimit = 100*1000*1000;//1;
+  PrimeLimit = 100000;//1;
 type
   tLimit = 1..PrimeLimit;
 var
@@ -125,6 +125,11 @@ Begin
   {count the primes }
   prCnt := 0;
   for i:= 1 to PrimeLimit do
-    inc(prCnt,Ord(primes[i]));
-  writeln(prCnt,' primes up to ',PrimeLimit);
+  begin
+    if primes[i] then
+    begin
+      inc(prCnt,Ord(primes[i]));
+      writeln('',i);
+    end;
+  end;
 end.

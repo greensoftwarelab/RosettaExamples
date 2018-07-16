@@ -1,5 +1,0 @@
-(define (sieve l prs)
-  (define p (car prs))
-  (define q (* p p))
-  (after q l (λ(t) (sieve (diff t (ints-from q p)) (cdr prs)))))
-(define primes (cons 2 (sieve (ints-from 3 1) primes)))

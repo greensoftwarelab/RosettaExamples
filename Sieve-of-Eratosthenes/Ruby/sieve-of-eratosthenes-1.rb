@@ -6,4 +6,4 @@ def eratosthenes(n)
   nums.compact
 end
 
-p eratosthenes(100)
+p eratosthenes(100000)

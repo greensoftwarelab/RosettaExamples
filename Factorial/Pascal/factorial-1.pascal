@@ -1,9 +1,19 @@
+Program Factorial;
+
 function factorial(n: integer): integer;
- var
-  i, result: integer;
  begin
-  result := 1;
-  for i := 2 to n do
-   result := result * i;
-  factorial := result
+  if n = 0
+   then
+    factorial := 1
+   else
+    factorial := n*factorial(n-1)
  end;
+
+var
+  fac: integer;
+
+begin
+  fac := factorial(15);
+  writeln (fac);
+
+end.

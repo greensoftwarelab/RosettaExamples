@@ -29,5 +29,9 @@ end
 
 gen = newEratoInf()
 count = 0
-while gen.next() <= 10000000 do count = count + 1 end -- sieves to 10 million
-print(count)
+v = gen.next()
+while v <= 100000 do 
+    print(v)
+    v = gen.next()
+end
+

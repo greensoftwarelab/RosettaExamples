@@ -1,0 +1,126 @@
+V "GNAT Lib v6"
+M P W=b
+A -O3
+A -fomit-frame-pointer
+A -march=native
+A -mfpmath=sse
+A -gnatN
+A -gnatp
+A -march=haswell
+A -mmmx
+A -mno-3dnow
+A -msse
+A -msse2
+A -msse3
+A -mssse3
+A -mno-sse4a
+A -mcx16
+A -msahf
+A -mmovbe
+A -maes
+A -mno-sha
+A -mpclmul
+A -mpopcnt
+A -mabm
+A -mno-lwp
+A -mfma
+A -mno-fma4
+A -mno-xop
+A -mbmi
+A -mbmi2
+A -mno-tbm
+A -mavx
+A -mavx2
+A -msse4.2
+A -msse4.1
+A -mlzcnt
+A -mno-rtm
+A -mno-hle
+A -mrdrnd
+A -mf16c
+A -mfsgsbase
+A -mno-rdseed
+A -mno-prfchw
+A -mno-adx
+A -mfxsr
+A -mxsave
+A -mxsaveopt
+A -mno-avx512f
+A -mno-avx512er
+A -mno-avx512cd
+A -mno-avx512pf
+A -mno-prefetchwt1
+A -mno-clflushopt
+A -mno-xsavec
+A -mno-xsaves
+A -mno-avx512dq
+A -mno-avx512bw
+A -mno-avx512vl
+A -mno-avx512ifma
+A -mno-avx512vbmi
+A -mno-clwb
+A -mno-pcommit
+A -mno-mwaitx
+A -mno-clzero
+A -mno-pku
+A -mtune=haswell
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U factorial%b		factorial.adb		2881e3a3 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-inteio.ads		20070406091342 f64b89a4 ada.integer_text_io%s
+D a-inteio.ads		20070406091342 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-tiinau.ads		20090409150019 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20091130162119 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D factorial.adb		20180628120421 e6a79fd3 factorial%b 1:factorial-1.ada
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20140801093848 98747b85 interfaces.c_streams%b
+D system.ads		20151123113124 6326c08a system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140801093848 ed88f8fb system.storage_elements%b
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+D s-wchcon.adb		20140225151139 974e87c5 system.wch_con%b
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6 1r23 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 13|2w10 2r35
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 1r27
+X 10 a-tiinio.ads
+66U14*Put 13|20s4[3|18]
+X 13 factorial-1.ada
+4U11*Factorial 4b11 21l5 21t14
+6V13 Get_Factorial{positive} 6b13 6>28 14l8 14t21 19s12
+6i28 N{positive} 7r28 8r28
+7i7 Result{positive} 11m10 11r20 13r14
+8i7 Counter{natural} 10r27
+10i11 I{integer} 11r29
+15i4 Val{positive} 18m4 19r26
+16i4 Fact{positive} 19m4 20r9
+

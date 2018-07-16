@@ -1,3 +1,5 @@
+<?php
+
 function iprimes_upto($limit)
 {
     for ($i = 2; $i < $limit; $i++)
@@ -18,3 +20,13 @@ function iprimes_upto($limit)
 
     return $primes;
 }
+
+$n = 100000;
+$primes = iprimes_upto($n);
+foreach($primes as $key=>$p) {
+    if ($p) {
+	echo "$key ";
+    }
+}
+echo "\n";
+?>

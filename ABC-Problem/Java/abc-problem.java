@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class ABC {
+class ABC {
 
     public static void main(String[] args) {
         List<String> blocks = Arrays.asList(
@@ -11,7 +11,7 @@ public class ABC {
                 "JW", "HU", "VI", "AN", "OB",
                 "ER", "FS", "LY", "PC", "ZM");
 
-        for (String word : Arrays.asList("", "A", "BARK", "BOOK", "TREAT", "COMMON", "SQUAD", "CONFUSE")) {
+        for (String word : Arrays.asList("A", "BARK", "BoOK", "TrEAT", "COmMoN", "SQUAD", "conFUsE")) {
             System.out.printf("%s: %s%n", word.isEmpty() ? "\"\"" : word, canMakeWord(word, blocks));
         }
     }

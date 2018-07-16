@@ -5,4 +5,4 @@ def eratosthenes2(n):
             yield i
             multiples.update(range(i*i, n+1, i))
 
-print(list(eratosthenes2(100)))
+print(list(eratosthenes2(100000)))

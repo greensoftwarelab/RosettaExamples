@@ -1,3 +1,5 @@
+#include <iostream>
+
 long long int Factorial(long long int m_nValue)
    {
        long long int result=m_nValue;
@@ -12,3 +14,9 @@ long long int Factorial(long long int m_nValue)
        m_nValue = result;
        return m_nValue;
    }
+
+int main() {
+      long long int n = 15;
+      std::cout << Factorial(n) << "\n";
+      return 0;
+}
