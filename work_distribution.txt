@@ -45,4 +45,8 @@ Rua:
 
 Jácome:
 - Fibonacci-sequence
+* all done with recursive version using as input the number 46 (biggest Ada could handle); it doesn't need to be runned repeated time as with 46 most languages take a few seconds to conclude
+* for C, C++, Chapel did my own implementation as rosetta didn't have a recursive one
+* running C gives a makefile error, but running the exeuctable doesn't... can and should be used
+* for Common Lisp used the makefile from the PL paper 
 - Hailstone-sequence
