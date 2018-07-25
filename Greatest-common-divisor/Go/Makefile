@@ -1,14 +1,15 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=solution.go
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=solution
 endif
 
 compile:
+	#cp $(FILE) .
 	/usr/bin/go build -o $(FILE)_run
 
 measure:

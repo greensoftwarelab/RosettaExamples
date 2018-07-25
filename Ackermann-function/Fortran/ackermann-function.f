@@ -4,7 +4,7 @@ PROGRAM EXAMPLE
   INTEGER :: i, j
 
   DO i = 0, 3
-    DO j = 0, 6
+    DO j = 0, 13
        WRITE(*, "(I10)", ADVANCE="NO") Ackermann(i, j)
     END DO
     WRITE(*,*)

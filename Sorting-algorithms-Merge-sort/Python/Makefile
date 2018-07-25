@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=sorting-algorithms-merge-sort-1-saraiva.py 
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=MergeSort
 endif
 
 compile:

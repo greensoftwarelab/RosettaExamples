@@ -26,6 +26,6 @@ mem:
 valgrind:
 	valgrind --tool=massif --stacks=yes sbcl --noinform --core $(TASK).core
 valmem:
-		valgrind --tool=massif --stacks=yes  sbcl --noinform --core $(TASK).core 21
+		valgrind --tool=massif --stacks=yes  sbcl --noinform --core $(TASK).core
 
 

@@ -1,3 +1,7 @@
+main :: IO ()
+main =
+  print $ fib 46
+
 fib x =
   if x < 1
     then 0

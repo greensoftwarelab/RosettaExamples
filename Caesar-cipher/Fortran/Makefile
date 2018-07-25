@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE= caesar-cipher.f90
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK= caesar-cipher
 endif
 
 compile:

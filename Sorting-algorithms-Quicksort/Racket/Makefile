@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=sorting-algorithms-quicksort-1-saraiva.rkt
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=QuickSort
 endif
 
 compile:

@@ -3,7 +3,7 @@ function ack(m, n) {
 }
 
 for(var m = 0; m < 4; m++){
-    for(var n = 0; n < 13; n++){
+    for(var n = 0; n < 14; n++){
         console.log(ack(m,n));
     }
 }

@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=solution.erl
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=rgcd
 endif
 
 compile:

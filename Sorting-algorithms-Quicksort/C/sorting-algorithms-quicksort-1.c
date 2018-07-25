@@ -1,23 +1,20 @@
 #include <stdio.h>
 
+#define list {1,2,9,4,6}
+
 void quicksort(int *A, int len);
 
 int main (void) {
-  int a[] = {4, 65, 2, -31, 0, 99, 2, 83, 782, 1};
-  int n = sizeof a / sizeof a[0];
-
-  int i;
-  for (i = 0; i < n; i++) {
-    printf("%d ", a[i]);
-  }
-  printf("\n");
+  int a[] = list;
+  int n = 5 ; // sizeof a / sizeof a[0];      saraiva: known ... 5
 
   quicksort(a, n);
 
-  for (i = 0; i < n; i++) {
-    printf("%d ", a[i]);
+  printf("{");
+  for (int i = 0; i < n; i++) {
+    printf("%d, ", a[i]);
   }
-  printf("\n");
+  printf("}\n");
 
   return 0;
 }

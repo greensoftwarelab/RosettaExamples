@@ -1,6 +1,7 @@
 public class NQueensRR{
 
-  private static int[] b = new int[12];
+  private static final int size = 12;
+  private static int[] b = new int[size];
   private static int s = 0;
 
   static boolean unsafe(int y) {
@@ -19,8 +20,8 @@ public class NQueensRR{
 
   public static void putboard() {
     System.out.println("\n\nSolution " + (++s));
-    for (int y = 0; y < 12; y++) {
-      for (int x = 0; x < 12; x++) {
+    for (int y = 0; y < size; y++) {
+      for (int x = 0; x < size; x++) {
         System.out.print((b[y] == x) ? "|Q" : "|_");
       }
       System.out.println("|");
@@ -28,21 +29,24 @@ public class NQueensRR{
   }
 
   public static void main(String[] args) {
-    int y = 0;
+    int y = 0, Nsols = 0;
     b[0] = -1;
     while (y >= 0) {
       do {
         b[y]++;
-      } while ((b[y] < 12) && unsafe(y));
-      if (b[y] < 12) {
-        if (y < 11) {
+      } while ((b[y] < size) && unsafe(y));
+      if (b[y] < size) {
+        if (y < size-1) {
           b[++y] = -1;
         } else {
-          putboard();
+          //putboard();
+	  Nsols++;
         }
       } else {
         y--;
       }
     }
+	System.out.println("Solution: " +Nsols);
+
   }
 }

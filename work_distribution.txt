@@ -1,34 +1,48 @@
 Rui:
-- Caesar-cipher (priority)
+- Caesar-cipher (priority) -errors GO,  python. pascal isn't possible (string limitation). php,rust no decode. racket wrong implementation
 - Binary-search
 - Factors-of-an-integer
 
+
+
 Saraiva:
 - Sorting-algorithms-Quicksort (priority)
+
+  done: C,OCaml,Haskell,Java,Pascal,Python,Perl,Lua,Go,JavaScript,Rust,Racket
+
+- Sorting-algorithms-Merge-sort (priority)
+
+a = quickSort(list)
+  done: C,OCaml,Haskell,Java,Pascal,Python,Perl,Lua,Go,Rust,Racket
+
 - Guess-the-number
 - Least-common-multiple
+
 
 João Paulo:
 - Towers-of-Hanoi (priority)
 - Binary-digits
 - Arithmetic-geometric-mean
 
+
 Marco:
 - Remove-duplicate-elements (priority)
 - Factorial
 - Sieve-of-Eratosthenes
+
 
 Francisco:
 - Ackermann-function (priority)
 - ABC-Problem
 - Greatest-element-of-a-list
 
+
 Rua:
-- N-queens-problem (priority)
-- 100-doors
-- Greatest-common-divisor
+- N-queens-problem (priority) -> (improbable)
+- 100-doors -> check
+- Greatest-common-divisor -> check
+
 
 Jácome:
-- Sorting-algorithms-Merge-sort (priority)
 - Fibonacci-sequence
 - Hailstone-sequence

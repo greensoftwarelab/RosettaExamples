@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=fibonacci-sequence-5.rust
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=fibonacci-sequence
 endif
 
 compile:

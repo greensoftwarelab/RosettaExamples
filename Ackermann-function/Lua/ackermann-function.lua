@@ -5,7 +5,7 @@ function ack(M,N)
 end
 
 for m=0,3 do
-    for n=0,12 do
+    for n=0,13 do
         print(ack(m,n))
     end
 end

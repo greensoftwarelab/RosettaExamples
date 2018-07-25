@@ -1,6 +1,6 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=solution.rb
 endif
 
 ifndef TASK
