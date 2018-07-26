@@ -51,4 +51,7 @@ Jácome:
 * for C, C++, Chapel did my own implementation as rosetta didn't have a recursive one
 * running C gives a makefile error, but running the exeuctable doesn't... can and should be used
 * for Common Lisp used the makefile from the PL paper 
+
 - Hailstone-sequence
+* done
+* the OCaml implementation doesn't seem to be producing all the results; either someone corrects or ignore
