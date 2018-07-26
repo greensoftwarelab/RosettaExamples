@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=hailstone-sequence.java
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=Hailstone
 endif
 
 compile:

@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE= binary-search.c
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=binary-search
 endif
 
 compile:

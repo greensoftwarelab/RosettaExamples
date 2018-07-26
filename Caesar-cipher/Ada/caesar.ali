@@ -1,0 +1,130 @@
+V "GNAT Lib v6"
+M P W=b
+A -O3
+A -fomit-frame-pointer
+A -march=native
+A -mfpmath=sse
+A -gnatN
+A -gnatp
+A -march=haswell
+A -mmmx
+A -mno-3dnow
+A -msse
+A -msse2
+A -msse3
+A -mssse3
+A -mno-sse4a
+A -mcx16
+A -msahf
+A -mmovbe
+A -maes
+A -mno-sha
+A -mpclmul
+A -mpopcnt
+A -mabm
+A -mno-lwp
+A -mfma
+A -mno-fma4
+A -mno-xop
+A -mbmi
+A -mbmi2
+A -mno-tbm
+A -mavx
+A -mavx2
+A -msse4.2
+A -msse4.1
+A -mlzcnt
+A -mno-rtm
+A -mno-hle
+A -mrdrnd
+A -mf16c
+A -mfsgsbase
+A -mno-rdseed
+A -mno-prfchw
+A -mno-adx
+A -mfxsr
+A -mxsave
+A -mxsaveopt
+A -mno-avx512f
+A -mno-avx512er
+A -mno-avx512cd
+A -mno-avx512pf
+A -mno-prefetchwt1
+A -mno-clflushopt
+A -mno-xsavec
+A -mno-xsaves
+A -mno-avx512dq
+A -mno-avx512bw
+A -mno-avx512vl
+A -mno-avx512ifma
+A -mno-avx512vbmi
+A -mno-clwb
+A -mno-pcommit
+A -mno-mwaitx
+A -mno-clzero
+A -mno-pku
+A -mtune=haswell
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U caesar%b		caesar.adb		1255e199 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D caesar.adb		20180626123308 2a38144d caesar%b 1:caesar-cipher.ada
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20140801093848 98747b85 interfaces.c_streams%b
+D system.ads		20151123113124 6326c08a system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140801093848 ed88f8fb system.storage_elements%b
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+D s-wchcon.adb		20140225151139 974e87c5 system.wch_con%b
+X 1 ada.ads
+16K9*Ada 19e8 8|1r6 41r4 42r4
+X 6 a-textio.ads
+49K13*Text_IO 471e16 8|1w10 41r8 42r8
+263U14*Put_Line 8|41s16 42s16
+X 8 caesar-cipher.ada
+3U11*Caesar 3b11 44l5 44t11
+5M9 M26 7r60 9r14 12r39 18r42 36r9
+7V13 To_M26{5M9} 7b13 7>20 7>34 10l8 10t14 25s40 27s40
+7e20 C{character} 9r32
+7e34 Offset{character} 9r49
+12V13 To_Character{character} 12b13 12>26 12>44 16l8 16t20 25s27 27s27
+12m26 Value{5M9} 15r36
+12e44 Offset{character} 15r57
+18V13 Encrypt{string} 18b13 18>22 18>37 33l8 33t15 40s12 42s25
+18a22 Plain{string} 19r20 22r16 23r15 25r47 27r47 29r27
+18m37 Key{5M9} 25r62 27r62
+19a7 Ciph{string} 25m16 27m16 29m16 32r14
+22i11 I{integer} 23r21 25r21 25r53 27r21 27r53 29r21 29r33
+35a4 Text{string} 40m4 40r20 41r25 42r33
+36m4 Key{5M9} 40r26 42r40
+

@@ -1,0 +1,5 @@
+#lang racket
+
+(define xx (gcd 7147483649 1143271457))
+(printf "GCD of 7147483649,1143271457 is ~a\n" xx) 
+

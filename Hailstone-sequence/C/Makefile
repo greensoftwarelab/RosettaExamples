@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=hailstone-sequence-1.c
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=hailstone-sequence
 endif
 
 compile:
