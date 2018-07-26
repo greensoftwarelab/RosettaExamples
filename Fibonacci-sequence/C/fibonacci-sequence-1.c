@@ -14,7 +14,7 @@ long fibb(int n) {
 
 int main() {
 	printf("%ld\n", fibb(46));
-	return 1;
+	return 0;
 }
 
 
