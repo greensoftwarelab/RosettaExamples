@@ -7,7 +7,7 @@ program ShowHailstoneSequence;
 uses
   SysUtils;// format
 const
-  maxN = 10*1000*1000;// for output 1000*1000*1000
+  maxN = 100000;// for output 1000*1000*1000
 
 type
   tiaArr = array[0..1000] of Uint64;
@@ -88,7 +88,7 @@ begin
   lMaxSequence := 0;
   lMaxLength := 0;
   i := 1;
-  limit := 10*i;
+  limit := 100000;
   writeln(' Limit      : number with max length | average length');
   repeat
     lAverageLength:= 0;

@@ -9,3 +9,8 @@
 	 (let ((len (length (hailstone i))))
 	   (when (> len l) (setq l len k i)))
 	 finally (format t "Longest hailstone sequence under ~A for ~A, having length ~A." n k l))))
+
+(defun main ()
+   (print (hailstone 27))
+   (print (longest 100000))
+)

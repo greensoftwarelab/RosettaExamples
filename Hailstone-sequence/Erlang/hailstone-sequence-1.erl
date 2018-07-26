@@ -1,5 +1,4 @@
 -module(hailstone).
--import(io).
 -export([main/0]).
 
 hailstone(1) -> [1];
@@ -21,4 +20,5 @@ main() ->
               [lists:nthtail(length(Seq27) - 4, Seq27)]),
     io:format("finding maximum hailstone(N) length for 1 <= N <= 100000..."),
     {Length, N} = max_length(1, 100000),
-    io:format(" done.~nhailstone(~B) length: ~B~n", [N, Length]).
+    io:format(" done.~nhailstone(~B) length: ~B~n", [N, Length]),
+    halt().

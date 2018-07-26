@@ -9,13 +9,13 @@ Saraiva:
 - Sorting-algorithms-Quicksort (priority)
 
   done: C,OCaml,Haskell,Java,Pascal,Python,Perl,Lua,Go,
-        JavaScript,Rust,Racket,Erlang
+        JavaScript,Rust,Racket,Erlang,Common-Lisp
 
 - Sorting-algorithms-Merge-sort (priority)
 
 a = quickSort(list)
   done: C,OCaml,Haskell,Java,Pascal,Python,Perl,Lua,Go,
-        Rust,Racket,Erlang
+        Rust,Racket,Erlang,Common-Lisp
 
 - Guess-the-number
 - Least-common-multiple

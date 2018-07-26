@@ -9,7 +9,7 @@ function hailstone (n) {
 
 // task 2: verify the sequence for n = 27
 var h = hailstone(27), hLen = h.length;
-print("sequence 27 is (" + h.slice(0, 4).join(", ") + " ... "
+console.log("sequence 27 is (" + h.slice(0, 4).join(", ") + " ... "
     + h.slice(hLen - 4, hLen).join(", ") + "). length: " + hLen);
 
 // task 3: find the longest sequence for n < 100000
@@ -20,4 +20,4 @@ for (var n, max = 0, i = 100000; --i;) {
         max = sLen;
     }
 }
-print("longest sequence: " + max + " numbers for starting point " + n);
+console.log("longest sequence: " + max + " numbers for starting point " + n);

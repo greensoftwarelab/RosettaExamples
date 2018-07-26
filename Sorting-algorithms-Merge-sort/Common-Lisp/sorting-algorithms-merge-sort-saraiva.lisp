@@ -5,3 +5,13 @@
        (merge result-type (merge-sort result-type (subseq sequence 0 split) predicate)
                           (merge-sort result-type (subseq sequence split)   predicate)
                           predicate))))
+
+
+(defun main () 
+    (let* ((lista '(1 2 9 4 6))
+           (lista2 (merge-sort 'list lista #'<))
+          )
+     (print lista2)
+    )
+)
+

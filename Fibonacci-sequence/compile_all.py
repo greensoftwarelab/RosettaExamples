@@ -34,6 +34,7 @@ def main():
           color_print('[OK]', color='green')
         else:
           color_print('[OK]', color='green')
+        print(std_out)
       if action == 'measure':
         call(['sleep', '5'])
 
