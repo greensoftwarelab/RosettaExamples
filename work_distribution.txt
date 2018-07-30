@@ -9,13 +9,12 @@ Saraiva:
 - Sorting-algorithms-Quicksort (priority)
 
   done: C,OCaml,Haskell,Java,Pascal,Python,Perl,Lua,Go,
-        JavaScript,Rust,Racket,Erlang,Common-Lisp
+        JavaScript,Rust,Racket,Erlang,Common-Lisp,Ruby,Dart
 
 - Sorting-algorithms-Merge-sort (priority)
 
-a = quickSort(list)
   done: C,OCaml,Haskell,Java,Pascal,Python,Perl,Lua,Go,
-        Rust,Racket,Erlang,Common-Lisp
+        Rust,Racket,Erlang,Common-Lisp,Ruby
 
 - Guess-the-number
 - Least-common-multiple
@@ -35,15 +34,23 @@ Marco:
 
 Francisco:
 - Ackermann-function (priority)
-- ABC-Problem
-- Greatest-element-of-a-list
+* working: Ada, C, C++, Chapel, Erlang, Go, Haskell, Lua, OCaml, Perl, PHP, Racket, Rust, Swift.
 
+- ABC-Problem
+* working: C, Python, Erlang, Go, Perl, Racket.
+* Go and C are too fast, so they need multiple iterations in order to run for more than 1 second.
+
+- Greatest-element-of-a-list
+* working: C, C++, Python, Dart, Go, Pascal
+* C, C++, Go and Pascal are REALLY fast (finishing in about 10 ms for 1 million elements already). These ones need lots of iterations, which drastically increases test duration for the other ones. Maybe we should skip this problem.
 
 Rua:
-- N-queens-problem (priority) -> (improbable)
-- 100-doors -> check
 - Greatest-common-divisor -> check
-
+working (status ==0 ) -> for f in $(find ./Greatest-common-divisor/ -maxdepth 1 -type d ) ; do echo "$f -> $(cat $f/status.txt)" ; done
+- N-queens-problem (priority) -> (almost)
+same
+- 100-doors -> check
+same
 
 Jácome:
 - Fibonacci-sequence
@@ -52,5 +59,4 @@ Jácome:
 * for Common Lisp used the makefile from the PL paper 
 
 - Hailstone-sequence
-* done
-* the OCaml implementation doesn't seem to be producing all the results; either someone corrects or ignore
+* done; everything works
