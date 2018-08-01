@@ -13,7 +13,7 @@ procedure Ackermann_Function is
    end Ackermann;
 begin
    for M in 0..3 loop
-      for N in 0..12 loop
+      for N in 0..13 loop
          Put (Natural'Image (Ackermann (M, N)));
          New_Line;
       end loop;

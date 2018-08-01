@@ -18,7 +18,6 @@ template <> struct fibo<1>
 
 int main(int argc, char const *argv[])
 {
-    std::cout<<fibo<12>::value<<std::endl;
     std::cout<<fibo<46>::value<<std::endl;
     return 0;
 }

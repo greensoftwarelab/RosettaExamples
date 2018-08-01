@@ -1,4 +1,4 @@
-pragma Source_Reference (000001, "100-doors-2.ada");
+pragma Source_Reference (000001, "solution.ada");
 with Ada.Text_Io; use Ada.Text_Io;
  with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
 
@@ -7,7 +7,7 @@ with Ada.Text_Io; use Ada.Text_Io;
  begin
     for I in 1..100 loop
        Num := Sqrt(Float(I));
-       Put(Integer'Image(I) & " is ");
+       Put("Door" & Integer'Image(I) & " is ");
        if Float'Floor(Num) = Num then
           Put_Line("Opened");
        else

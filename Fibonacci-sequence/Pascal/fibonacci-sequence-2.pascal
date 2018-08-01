@@ -1,4 +1,4 @@
-function fib(n: integer): integer;
+function fib(n: longint): longint;
  begin
   if (n = 0) or (n = 1)
    then
@@ -6,3 +6,7 @@ function fib(n: integer): integer;
    else
     fib := fib(n-1) + fib(n-2)
  end;
+
+begin
+	Writeln(fib(46));
+end.

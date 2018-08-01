@@ -7,7 +7,7 @@ main() ->
     halt(0).
 
 loop(4, _) -> noop;
-loop(M, 13) -> loop(M+1, 0);
+loop(M, 14) -> loop(M+1, 0);
 loop(M, N) -> io:write(ackermann(M, N)),
               io:nl(),
               loop(M, N+1).

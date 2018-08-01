@@ -15,6 +15,6 @@ var
 
 begin
    for m := 0 to 3 do
-      for n := 0 to 12 do
+      for n := 0 to 13 do
 	 WriteLn(ackermann(m,n));
 end.

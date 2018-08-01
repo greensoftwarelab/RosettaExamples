@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=sorting-algorithms-merge-sort-3-saraiva.ada 
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=MergeSort
 endif
 
 compile:

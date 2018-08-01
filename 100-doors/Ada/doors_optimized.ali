@@ -69,12 +69,11 @@ P ZX
 RN
 RV NO_FLOATING_POINT
 RV NO_IO
-RV NO_IMPLICIT_CONDITIONALS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U doors_optimized%b	doors_optimized.adb	ba06ba0d NE OO SU
+U doors_optimized%b	doors_optimized.adb	50fa8ef2 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
@@ -92,7 +91,7 @@ D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
 D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
 D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
 D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
-D doors_optimized.adb	20180617213132 818372c5 doors_optimized%b 1:100-doors-2.ada
+D doors_optimized.adb	20180720130913 6b7f463a doors_optimized%b 1:solution.ada
 D interfac.ads		20151118101227 4be8ce1b interfaces%s
 D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
 D i-cstrea.adb		20140801093848 98747b85 interfaces.c_streams%b
@@ -126,8 +125,8 @@ X 9 a-textio.ads
 49K13*Text_IO 471e16 11|1w10 1r27
 242U14*Put 11|9s8
 263U14*Put_Line 11|11s11 13s11
-X 11 100-doors-2.ada
+X 11 solution.ada
 4U12*Doors_Optimized 4b12 16l6 16t21
 5f5 Num{float} 8m8 10r23 10r30
-7i9 I{integer} 8r26 9r26
+7i9 I{integer} 8r26 9r35
 

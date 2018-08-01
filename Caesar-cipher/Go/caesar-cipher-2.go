@@ -55,3 +55,4 @@ func main() {
         fmt.Println("  Deciphered:", ck.decipher(ct))
     }
 }
+ 

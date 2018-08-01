@@ -5,5 +5,5 @@
 
 (defun main ()
     (loop for m from 0 to 3 do
-      (loop for n from 0 to 12 do
+      (loop for n from 0 to 13 do
         (format t "~d~%" (ackermann m n)))))

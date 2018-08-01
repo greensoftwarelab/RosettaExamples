@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 List<int> hailstone(int n) {
   if(n<=0) {
     throw new IllegalArgumentException("start value must be >=1)");
@@ -26,19 +28,16 @@ String iterableToString(Iterable seq) {
 
 main() {
   for(int i=1;i<=10;i++) {
-    print("h($i)="+iterableToString(hailstone(i)));
+    print("h($i)="+hailstone(i).join());
   }
   List<int> h27=hailstone(27);
   List<int> first4=h27.getRange(0,4);
-  print("first 4 elements of h(27): "+iterableToString(first4));
-  Expect.listEquals([27,82,41,124],first4);
+  print("first 4 elements of h(27): "+first4.join(" "));
 
-  List<int> last4=h27.getRange(h27.length-4,4);
-  print("last 4 elements of h(27): "+iterableToString(last4));
-  Expect.listEquals([8,4,2,1],last4);
+  List<int> last4=h27.getRange(h27.length-4,h27.length);
+  print("last 4 elements of h(27): "+last4.join(" "));
 
-  print("length of sequence h(27): "+h27.length);
-  Expect.equals(112,h27.length);
+  print("length of sequence h(27): "+h27.length.toString());
 
   int seq,max=0;
   for(int i=1;i<=100000;i++) {

@@ -9,7 +9,7 @@ func ackerman(m:Int, n:Int) -> Int {
 }
 
 for m in 0...3 {
-    for n in 0...12 {
+    for n in 0...13 {
         print(ackerman(m:m,n:n))
     }
 }

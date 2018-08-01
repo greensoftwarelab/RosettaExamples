@@ -13,7 +13,7 @@ function ackermann( $m , $n )
 }
 
 for($m = 0; $m < 4; $m++){
-    for($n = 0; $n < 13; $n++){
+    for($n = 0; $n < 14; $n++){
         echo ackermann($m, $n),"\n";
     }
 }

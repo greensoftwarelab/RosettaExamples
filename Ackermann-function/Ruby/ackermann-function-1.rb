@@ -9,7 +9,7 @@ def ack(m, n)
 end
 
 for m in 0..3 do
-    for n in 0..12 do
+    for n in 0..13 do
         puts ack(m,n)
     end
 end

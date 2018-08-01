@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE= caesar-cipher.rust
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK= caesar-cipher
 endif
 
 compile:
@@ -15,7 +15,7 @@ measure:
 	sudo ../../RAPL/main "./$(TASK).rust_run" Rust $(TASK)
 
 run:
-	./$(TASK).rust_run
+	./$(TASK).rust_run 
 
 mem:
 	/usr/bin/time -v ./$(TASK).rust_run

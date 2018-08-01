@@ -15,6 +15,5 @@ int fib(int n) {
 int fibRec(int n) => n==0 || n==1 ? n : fibRec(n-1) + fibRec(n-2);
 
 main() {
-  print(fib(11));
-  print(fibRec(11));
+  print(fibRec(46));
 }

@@ -2,7 +2,7 @@ with Ada.Text_IO, Ada.Command_Line;
 
 procedure Fib is
 
-   X: Positive := Positive'Value(Ada.Command_Line.Argument(1));
+   X: Positive := 46;
 
    function Fib(P: Positive) return Positive is
    begin
@@ -14,6 +14,5 @@ procedure Fib is
    end Fib;
 
 begin
-   Ada.Text_IO.Put("Fibonacci(" & Integer'Image(X) & " ) = ");
    Ada.Text_IO.Put_Line(Integer'Image(Fib(X)));
 end Fib;

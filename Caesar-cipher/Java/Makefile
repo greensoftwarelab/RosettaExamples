@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=Cipher.java
+	FILE=ccipher.java
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=caesar-cipher
+	TASK=Cipher
 endif
 
 compile:

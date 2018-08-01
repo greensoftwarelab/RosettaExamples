@@ -5,17 +5,18 @@ endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=solution.f90
 endif
 
 compile:
-	ifort -O3 -xHost -qopenmp -static-intel -ip -lapr-1 $(FILE) -o $(FILE)_run
+	cp $(FILE) $(TASK)
+	ifort -O3 -xHost -qopenmp -static-intel -ip -lapr-1 $(TASK) -o $(TASK)_run
 
 measure:
-	sudo ../../RAPL/main "./$(FILE)_run" Fortran $(TASK)
+	sudo ../../RAPL/main "./$(TASK)_run" Fortran $(TASK)
 
 run:
-	./$(FILE)_run
+	./$(TASK)_run
 
 mem:
 	/usr/bin/time -v  ./$(FILE)_run

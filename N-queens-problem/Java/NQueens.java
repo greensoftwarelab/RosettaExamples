@@ -1,6 +1,6 @@
-public class NQueens {
+public class NQueensRR{
 
-  private static int[] b = new int[8];
+  private static int[] b = new int[12];
   private static int s = 0;
 
   static boolean unsafe(int y) {
@@ -19,8 +19,8 @@ public class NQueens {
 
   public static void putboard() {
     System.out.println("\n\nSolution " + (++s));
-    for (int y = 0; y < 8; y++) {
-      for (int x = 0; x < 8; x++) {
+    for (int y = 0; y < 12; y++) {
+      for (int x = 0; x < 12; x++) {
         System.out.print((b[y] == x) ? "|Q" : "|_");
       }
       System.out.println("|");
@@ -33,9 +33,9 @@ public class NQueens {
     while (y >= 0) {
       do {
         b[y]++;
-      } while ((b[y] < 8) && unsafe(y));
-      if (b[y] < 8) {
-        if (y < 7) {
+      } while ((b[y] < 12) && unsafe(y));
+      if (b[y] < 12) {
+        if (y < 11) {
           b[++y] = -1;
         } else {
           putboard();

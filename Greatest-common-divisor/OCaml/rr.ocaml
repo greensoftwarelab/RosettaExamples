@@ -1,0 +1,8 @@
+let rec gcd a b =
+  if      a = 0 then b
+  else if b = 0 then a
+  else if a > b then gcd b (a mod b)
+  else               gcd a (b mod a)
+
+let () =
+  Printf.printf "GCD of 2147483646,1143271457 is %d \n" (gcd 2147483646 1143271457)

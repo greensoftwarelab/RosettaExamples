@@ -12,7 +12,7 @@ unsigned int ackermann(unsigned int m, unsigned int n) {
 
 int main() {
   for (unsigned int m = 0; m < 4; ++m) {
-    for (unsigned int n = 0; n < 13; ++n) {
+    for (unsigned int n = 0; n < 14; ++n) {
       std::cout << ackermann(m, n) << "\n";
     }
   }

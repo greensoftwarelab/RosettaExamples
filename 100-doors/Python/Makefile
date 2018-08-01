@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=solution.py
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=sol
 endif
 
 compile:

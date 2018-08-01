@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 // 1st arg is the number to generate the sequence for.
 // 2nd arg is a slice to recycle, to reduce garbage.

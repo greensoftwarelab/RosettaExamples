@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE=sorting-algorithms-quicksort-1-saraiva.erl
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=quicksort
 endif
 
 compile:

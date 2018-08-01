@@ -1,3 +1,4 @@
+
 { X is array of LongInt }
 Procedure QuickSort ( Left, Right : LongInt );
 Var

@@ -2,7 +2,7 @@ package main
 
 func main(){
     for m := 0; m < 4; m++ {
-        for n := 0; n < 13; n++ {
+        for n := 0; n < 14; n++ {
             println(Ackermann(uint(m),uint(n)))
         }
     }

@@ -1,36 +1,25 @@
 use std::io::{self, Write};
 use std::fmt::Display;
-use std::{env, process};
 
 fn main() {
-    let shift: u8 = env::args().nth(1)
-        .unwrap_or_else(|| exit_err("No shift provided", 2))
-        .parse()
-        .unwrap_or_else(|e| exit_err(e, 3));
+    let shift: u8 = 12;
+    let unshift: u8 = 12-12-12;
 
-    let plain = get_input()
-        .unwrap_or_else(|e| exit_err(&e, e.raw_os_error().unwrap_or(-1)));
+    let plain = "the action of a caesar cipher is to replace each plaintext letter with a different one a fixed number of places down the alphabet. the cipher illustrated here uses a left shift of three, so that each occurrence of e in the plaintext becomes b in the ciphertext.in cryptography, a caesar cipher, also known as caesars cipher, the shift cipher, caesars code or caesar shift, is one of the simplest and most widely known encryption techniques. it is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. for example, with a left shift of 3, d would be replaced by a, e would become b, and so on. the method is named after julius caesar, who used it in his private correspondence. the encryption step performed by a caesar cipher is often incorporated as part of more complex schemes, such as the vigenère cipher, and still has modern application in the rot13 system. as with all single-alphabet substitution ciphers, the caesar cipher is easily broken and in modern practice offers essentially no communication security.";
 
     let cipher = plain.chars()
         .map(|c| {
             let case = if c.is_uppercase() {'A'} else {'a'} as u8;
             if c.is_alphabetic() { (((c as u8 - case + shift) % 26) + case) as char } else { c }
         }).collect::<String>();
+	
 
-    println!("Cipher text: {}", cipher.trim());
-}
+        let uncipher = cipher.chars()
+        .map(|c| {
+            let case = if c.is_uppercase() {'A'} else {'a'} as u8;
+            if c.is_alphabetic() { (((c as u8 - case - unshift) % 26) + case) as char } else { c }
+        }).collect::<String>();
 
-
-fn get_input() -> io::Result<String> {
-    print!("Plain text:  ");
-    try!(io::stdout().flush());
-
-    let mut buf = String::new();
-    try!(io::stdin().read_line(&mut buf));
-    Ok(buf)
-}
-
-fn exit_err<T: Display>(msg: T, code: i32) -> ! {
-    let _ = writeln!(&mut io::stderr(), "ERROR: {}", msg);
-    process::exit(code);
+    println!("Cipher text: {}", cipher);
+    println!("Uncipher: {}",uncipher);
 }
