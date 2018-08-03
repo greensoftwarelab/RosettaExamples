@@ -1,16 +1,13 @@
-cd Hailstone-sequence
+cd Ackermann-function
 python compile_all.py make measure
 cd ..
-cd Caesar-cipher
+cd Remove-duplicate-elements
 python compile_all.py make measure
 cd ..
-cd Sorting-algorithms-Quicksort
+cd Factorial
 python compile_all.py make measure
 cd ..
 cd Sieve-of-Eratosthenes
-python compile_all.py make measure
-cd ..
-cd ABC-Problem
 python compile_all.py make measure
 cd ..
 cd N-queens-problem
