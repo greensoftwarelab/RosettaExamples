@@ -10,7 +10,7 @@ endif
 
 compile:
 	cp $(FILE) $(TASK).pas
-	/usr/local/src/fpc-3.0.2.x86_64-linux/bin/fpc -FuInclude/fpascal -XXs -O4 -Tlinux  -oFPASCAL_RUN $(TASK).pas
+	/usr/local/src/fpc-3.0.2.x86_64-linux/bin/fpc -Mobjfpc -FuInclude/fpascal -XXs -O4 -Tlinux  -oFPASCAL_RUN $(TASK).pas
 	mv FPASCAL_RUN $(FILE)_run
 	rm $(TASK).pas
 	

@@ -1,6 +1,6 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=sorting-algorithms-quicksort-saraiva.ocaml 
+	FILE=sorting-algorithms-quicksort-saraiva.ocaml
 endif
 
 ifndef TASK

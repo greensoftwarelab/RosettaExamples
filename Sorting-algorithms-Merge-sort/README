@@ -1,0 +1,9 @@
+import vi
+
+:r path+file
+
+
+
+substituir vi
+
+:s/,/;/g

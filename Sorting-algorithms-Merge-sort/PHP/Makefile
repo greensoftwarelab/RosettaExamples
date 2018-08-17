@@ -1,11 +1,11 @@
 ifndef FILE
 #$(error FILE is not set)
-	FILE=
+	FILE= sorting-algorithms-merge-sort-saraiva.php
 endif
 
 ifndef TASK
 #$(error TASK is not set)
-	TASK=
+	TASK=mergesort
 endif
 
 compile:

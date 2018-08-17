@@ -1,0 +1,136 @@
+V "GNAT Lib v6"
+M P W=b
+A -O3
+A -fomit-frame-pointer
+A -march=native
+A -mfpmath=sse
+A -gnatN
+A -gnatp
+A -march=haswell
+A -mmmx
+A -mno-3dnow
+A -msse
+A -msse2
+A -msse3
+A -mssse3
+A -mno-sse4a
+A -mcx16
+A -msahf
+A -mmovbe
+A -maes
+A -mno-sha
+A -mpclmul
+A -mpopcnt
+A -mabm
+A -mno-lwp
+A -mfma
+A -mno-fma4
+A -mno-xop
+A -mbmi
+A -mbmi2
+A -mno-tbm
+A -mavx
+A -mavx2
+A -msse4.2
+A -msse4.1
+A -mlzcnt
+A -mno-rtm
+A -mno-hle
+A -mrdrnd
+A -mf16c
+A -mfsgsbase
+A -mno-rdseed
+A -mno-prfchw
+A -mno-adx
+A -mfxsr
+A -mxsave
+A -mxsaveopt
+A -mno-avx512f
+A -mno-avx512er
+A -mno-avx512cd
+A -mno-avx512pf
+A -mno-prefetchwt1
+A -mno-clflushopt
+A -mno-xsavec
+A -mno-xsaves
+A -mno-avx512dq
+A -mno-avx512bw
+A -mno-avx512vl
+A -mno-avx512ifma
+A -mno-avx512vbmi
+A -mno-clwb
+A -mno-pcommit
+A -mno-mwaitx
+A -mno-clzero
+A -mno-pku
+A -mtune=haswell
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U hailstone%b		hailstone.adb		2b9c3b00 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D hailstone.adb		20180801145606 13f1ced4 hailstone%b 1:hailstone-sequence-1.ada
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20140801093848 98747b85 interfaces.c_streams%b
+D system.ads		20151123113124 6326c08a system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-imgint.ads		20090409150019 02dbe0c2 system.img_int%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140801093848 ed88f8fb system.storage_elements%b
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+D s-wchcon.adb		20140225151139 974e87c5 system.wch_con%b
+X 1 ada.ads
+16K9*Ada 19e8 8|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 8|1w10 1r27
+166U14*New_Line 8|27s45 31s9
+242U14*Put 8|27s9 28s28 29s9 30s40
+263U14*Put_Line 8|38s9
+X 8 hailstone-sequence-1.ada
+2U11*hailstone 2b11 39l5 39t14
+3A14 int_arr(integer)<integer> 4r39 25r21
+4P14 int_arr_pt(3A14) 6r45 22r16
+6V18 hailstones{integer} 6b18 6>29 6>42 19l13 19t23 24s19 26s19 33s27
+6i29 num{integer} 8r32 10r45
+6p42 pt{4P14} 10r20 10r36 16r28 16r44
+7i17 stones{integer} 12m25 12r35 16r47 18r24
+8i17 n{integer} 11r24 13r28 13m45 13r50 14m30 14r38 16r58
+21i9 nmax{integer} 35m25 38r32
+21i14 stonemax{integer} 34r27 35m36 38r65
+21i23 stones{integer} 24m9 25r32 26m9 27r35 30r18 30r28 33m17 34r20 35r48
+22p9 list{4P14} 25m9 26r33 28r46 30r58
+28i13 n{integer} 28r51
+30i13 n{integer} 30r63
+32i13 n{integer} 33r38 35r33
+

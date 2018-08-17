@@ -9,7 +9,7 @@ with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
 procedure QuickSort is
 
-procedure Sort (Item : in out Element_Type) is
+procedure Sort (Item : in out Element_Array) is
 
    procedure Swap(Left, Right : in out Element_Type) is
       Temp : Element_Type := Left;
